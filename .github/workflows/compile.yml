@@ -31,7 +31,7 @@ jobs:
   deploy:
     needs: [paper]
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'the-teachingRSE-project/institutionalized_education' && github.ref == 'refs/heads/main' }}
+    if: ${{ github.repository == 'the-teachingRSE-project/call_to_action' && github.ref == 'refs/heads/main' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

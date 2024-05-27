@@ -2,7 +2,7 @@
 
 MAKE_PDFA := true
 
-objects := institutionalised_education.pdf
+objects := call_to_action.pdf
 
 all: $(objects)
 
