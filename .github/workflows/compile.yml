@@ -30,6 +30,8 @@ jobs:
           path: ./github_artifacts
   deploy:
     needs: [paper]
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'the-teachingRSE-project/call_to_action' && github.ref == 'refs/heads/main' }}
     steps:
